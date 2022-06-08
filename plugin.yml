@@ -1,0 +1,13 @@
+name: Environment Hook
+description: |
+  Replace environment during environment hook for a single step.
+  This works for public repositories or when using the AWS S3 Secrets Buildkite Plugin
+author: https://github.com/DaWyz
+requirements: []
+configuration:
+  properties:
+    env:
+      type: object
+      additionalProperties:
+        type: string
+  additionalProperties: false
