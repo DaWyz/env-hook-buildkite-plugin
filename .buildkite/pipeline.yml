@@ -1,0 +1,8 @@
+steps:
+  - label: test
+    commands:
+      - printenv
+    plugins:
+      - https://github.com/DaWyz/env-hook-buildkite-plugin.git#feat/base-plugin:
+          vars:
+            BUILDKITE_REPO: my-custom-repo

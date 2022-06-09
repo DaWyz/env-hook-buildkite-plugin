@@ -1,0 +1,11 @@
+version: '2'
+services:
+  lint:
+    image: buildkite/plugin-linter
+    command: ['--id', 'DaWyz/env-hook']
+    volumes:
+      - ".:/plugin"
+  tests:
+    image: buildkite/plugin-tester
+    volumes:
+      - ".:/plugin"
